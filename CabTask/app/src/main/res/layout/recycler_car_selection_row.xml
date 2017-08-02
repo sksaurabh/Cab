@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/layout"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/car_selection_row_tabView"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/color_for_cars"
+        android:visibility="invisible"
+        android:layout_marginBottom="@dimen/i1_5dp_margin"/>
+
+    <!--<ImageView
+        android:id="@+id/car_selection_row_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true" />-->
+
+    <!--<com.alcord.cab10.passenger.custom.CircleImageView
+        android:id="@+id/car_selection_row_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />-->
+
+    <TextView
+        android:layout_marginBottom="@dimen/i1_5dp_margin"
+        android:id="@+id/car_selection_row_textView"
+        android:layout_below="@id/car_selection_row_tabView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        style="@style/secondaryTextRegularGary"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <!--<ImageView
+        android:id="@+id/circle_border"
+        android:src="@drawable/circular_shape"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"/>-->
+
+        <ImageView
+            android:id="@+id/car_selection_row_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/car_sedan" />
+
+    </RelativeLayout>
+
+</LinearLayout>

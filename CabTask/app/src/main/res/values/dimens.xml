@@ -1,0 +1,139 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_padding_left">16dp</dimen>
+    <dimen name="activity_padding_right">16dp</dimen>
+    <dimen name="activity_padding_top">16dp</dimen>
+    <dimen name="activity_padding_bottom">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+    - <!--  Default screen margins, per the Android Design guidelines.
+  -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">100dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="addproduct_imageview_dimens">170dp</dimen>
+    <dimen name="vehicle_list_container_height">90dp</dimen>
+    <dimen name="mini_divider">1dp</dimen>
+    <dimen name="primary_text_size">18sp</dimen>
+    <dimen name="secondary_text_size">16sp</dimen>
+    <dimen name="ternary_text_size">12sp</dimen>
+    <dimen name="default_text_size">14sp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="primary_button_text_size">22sp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    - <!-- Intbit Dimensions start
+  -->
+    - <!-- Text sizes start
+  -->
+    <dimen name="i1_zero">8sp</dimen>
+    <dimen name="i1_one">9sp</dimen>
+    <dimen name="i1_two">10sp</dimen>
+    <dimen name="i1_three">11sp</dimen>
+    <dimen name="i1_four">12sp</dimen>
+    <dimen name="i1_five">13sp</dimen>
+    <dimen name="i1_six">14sp</dimen>
+    <dimen name="i1_seven">15sp</dimen>
+    <dimen name="i1_eight">16sp</dimen>
+    <dimen name="i1_nine">17sp</dimen>
+    <dimen name="i1_ten">18sp</dimen>
+    <dimen name="i1_eleven">19sp</dimen>
+    <dimen name="i1_twelve">20sp</dimen>
+    <dimen name="i1_thirteen">21sp</dimen>
+    <dimen name="i1_fourteen">22sp</dimen>
+    <dimen name="i1_fifteen">23sp</dimen>
+    <dimen name="i1_sixteen">24sp</dimen>
+    <dimen name="i1_seventeen">25sp</dimen>
+    <dimen name="i1_eighteen">26sp</dimen>
+    <dimen name="i1_nineteen">27sp</dimen>
+    <dimen name="i1_twenty">28sp</dimen>
+    <dimen name="i1_twenty_one">29sp</dimen>
+    <dimen name="i1_twenty_two">30sp</dimen>
+    <dimen name="i1_forty">40sp</dimen>
+    - <!-- Text sizes end
+  -->
+    - <!-- General padding starts
+  -->
+    <dimen name="i1_5dp_padding">5dp</dimen>
+    <dimen name="i1_10dp_padding">10dp</dimen>
+    <dimen name="i1_15dp_padding">15dp</dimen>
+    <dimen name="i1_20dp_padding">20dp</dimen>
+    <dimen name="i1_25dp_padding">20dp</dimen>
+    <dimen name="i1_30dp_padding">30dp</dimen>
+    <dimen name="i1_40dp_padding">30dp</dimen>
+    <dimen name="i1_50dp_padding">30dp</dimen>
+    <dimen name="i1_60dp_padding">30dp</dimen>
+    <dimen name="i1_70dp_padding">30dp</dimen>
+    <dimen name="i1_80dp_padding">30dp</dimen>
+    - <!-- General padding ends
+  -->
+    - <!-- General margins start
+  -->
+    <dimen name="i1_5dp_margin">5dp</dimen>
+    <dimen name="i1_10dp_margin">10dp</dimen>
+    <dimen name="i1_15dp_margin">15dp</dimen>
+    <dimen name="i1_20dp_margin">20dp</dimen>
+    <dimen name="i1_30dp_margin">30dp</dimen>
+    <dimen name="i1_35dp_margin">35dp</dimen>
+    <dimen name="i1_50dp_margin">50dp</dimen>
+    <dimen name="i1_60dp_margin">60dp</dimen>
+    <dimen name="i1_65dp_margin">65dp</dimen>
+    <dimen name="i1_70dp_margin">70dp</dimen>
+    <dimen name="i1_80dp_margin">80dp</dimen>
+    - <!-- General margins end
+  -->
+    - <!-- Dialog dimensions start
+  -->
+    <dimen name="i1_dialog_padding">24dp</dimen>
+    <dimen name="i1_dialog_top_padding">24dp</dimen>
+    <dimen name="i1_dialog_bottom_padding">24dp</dimen>
+    <dimen name="i1_dialog_left_padding">24dp</dimen>
+    <dimen name="i1_dialog_right_padding">24dp</dimen>
+    <dimen name="i1_dialog_button_padding">8dp</dimen>
+    <dimen name="i1_dialog_button_margin">8dp</dimen>
+    - <!-- Dialog dimensions end
+  -->
+    - <!-- Card View dimensions start
+  -->
+    <dimen name="i1_card_view_padding_16dp">16dp</dimen>
+    <dimen name="i1_card_view_padding_8dp">8dp</dimen>
+    <dimen name="i1_card_view_margin_8dp">8dp</dimen>
+    <dimen name="i1_card_view_padding_top">24dp</dimen>
+    <dimen name="i1_card_view_padding_bottom">24dp</dimen>
+    <dimen name="i1_card_view_padding_left">16dp</dimen>
+    <dimen name="i1_card_view_padding_right">16dp</dimen>
+    - <!-- Card View dimensions end
+  -->
+    - <!-- Tab dimensions start
+  -->
+    <dimen name="i1_tab_indicator_height">2dp</dimen>
+    <dimen name="i1_5dp_elevation">5dp</dimen>
+    <dimen name="i1_8dp_elevation">8dp</dimen>
+    <dimen name="i1_10dp_elevation">10dp</dimen>
+    <dimen name="i1_3dp_elevation">3dp</dimen>
+    - <!-- Tab dimensions end
+  -->
+    <dimen name="i1_0dp">0dp</dimen>
+    <dimen name="tabsHeight">48dp</dimen>
+    <dimen name="activity_row_height">60dp</dimen>
+    <dimen name="filter_by_button_height">30dp</dimen>
+    <dimen name="sort_by_button_height">35dp</dimen>
+    <dimen name="new_request_button_width">150dp</dimen>
+    <dimen name="new_request_button_height">50dp</dimen>
+
+    <dimen name="passanger_MarginTop">15dp</dimen>
+    <dimen name="passanger_MarginBottom">15dp</dimen>
+    <dimen name="passanger_MarginLeft">15dp</dimen>
+    <dimen name="passanger_MarginRight">15dp</dimen>
+    <dimen name="i1_150dp_toolbarhight_editprofile">150dp</dimen>
+    <dimen name="nowidth">0dp</dimen>
+    <dimen name="shadow_size">8dip</dimen>
+    <dimen name="size_emergency_text">32sp</dimen>
+    <dimen name="use_in_case_text">22sp</dimen>
+
+
+</resources>

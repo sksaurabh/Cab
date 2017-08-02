@@ -1,0 +1,4 @@
+<vector android:height="24dp" android:viewportHeight="192.0"
+    android:viewportWidth="192.0" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/button_disabled" android:pathData="M77,176.8v-57h38v57h47.5v-76H191L96,15.3L1,100.8h28.5v76H77z"/>
+</vector>

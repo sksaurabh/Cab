@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseToolbar"
+    android:theme="@style/ToolbarTheme">
+
+    <TextView
+        android:id="@+id/toolbar_title_textview"
+        style="@style/ToolBarTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="false" />
+
+</android.support.v7.widget.Toolbar>

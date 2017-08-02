@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CabTask</string>
+    <string name="ok">Ok</string>
+    <string name="book_later_info">Book Later</string>
+    <string name="alert_autocomplete_error">Something wrong</string>
+    <string name="Dashboard">DashBoard</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Close</string>
+    <string name="app_link">www.applink.com</string>
+    <string name="get_fare">Book Cab</string>
+    <string name="book_cab">Do You want to Book Now?</string>
+    <string name="click_ok">For Book the Cab Press Ok</string>
+</resources>

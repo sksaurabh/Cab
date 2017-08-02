@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".DashBoardActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_ride_request_details_map_mainRelative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/activity_ride_request_details_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/mRecyclerviewLinearlayout">
+
+                <include
+                    android:id="@+id/dash_board_toolbar"
+                    layout="@layout/base_tool_bar" />
+
+                <!--FrameLayout to make map draggable.-->
+                <!--<FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/dash_board_toolbar">-->
+
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/dash_board_map"
+                    android:layout_below="@+id/dash_board_toolbar"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!--<LinearLayout
+                    android:id="@+id/location_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/location_marker_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_map"
+                        android:gravity="center"
+                        android:minWidth="250dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="@string/set_your_location"
+                        android:textColor="@android:color/white" />
+
+                    <ImageView
+                        android:id="@+id/image_marker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/map_pin_icon" />
+                </LinearLayout>
+            </FrameLayout>-->
+
+                <!--Image At The Center to be used when map draggable options is used.-->
+                <!--
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/central_marker"
+                    android:src="@drawable/map_pin_icon"/>-->
+
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dash_board_toolbar"
+                    android:layout_margin="@dimen/activity_padding_right"
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!--<TextView-->
+                        <!--android:id="@+id/pickup_location_text_view"-->
+                        <!--style="@style/secondaryText"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:drawableLeft="@drawable/from_location_blue"-->
+                        <!--android:drawablePadding="@dimen/i1_5dp_padding"-->
+                        <!--android:gravity="center|left"-->
+                        <!--android:hint="Enter Pickup Location"-->
+                        <!--android:paddingBottom="@dimen/i1_5dp_padding"-->
+                        <!--android:paddingTop="@dimen/i1_5dp_padding" />-->
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/activity_fav_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                             />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/underline" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_small">
+
+                        <TextView
+                            android:id="@+id/pickup_location_text_view"
+                            style="@style/secondaryText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/from_location_blue"
+                            android:drawablePadding="@dimen/i1_5dp_padding"
+                            android:gravity="center|left"
+                            android:hint="Enter Pickup Location"
+                            android:paddingBottom="@dimen/i1_5dp_padding"
+                            android:paddingTop="@dimen/i1_5dp_padding" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/underline" />
+
+                        <TextView
+                            android:id="@+id/drop_location_text_view"
+                            style="@style/secondaryText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/to_location_green"
+                            android:drawablePadding="@dimen/i1_5dp_padding"
+                            android:gravity="center|left"
+                            android:hint="Enter Drop Location"
+                            android:paddingBottom="@dimen/i1_5dp_padding"
+                            android:paddingTop="@dimen/i1_5dp_padding" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mRecyclerviewLinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vehicle_list_container_height"
+                android:layout_above="@+id/book_now_fare_estimate_container"
+               >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/dash_board_car_selection_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/book_now_fare_estimate_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ride_request_droploc_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mini_divider"
+                    android:orientation="horizontal">
+
+                    <!--Book later button commented for later use-->
+                    <!--<LinearLayout
+                        android:id="@+id/al_dashbord_booklater_linearlayout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/mini_divider"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        &lt;!&ndash;   style="@style/secondaryButton"&ndash;&gt;
+                        <Button
+                            android:id="@+id/al_dashboard_booklater"
+                            style="@style/secondaryButton"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/button_booklater_background"
+                            android:text="@string/book_later" />
+
+
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/al_dashbord_booknow_linearlayout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <!--  style="@style/primaryButton"-->
+
+                        <Button
+                            android:id="@+id/al_dashboard_booknow"
+                            style="@style/primaryButtonforbooknowTextView"
+                            android:text="@string/get_fare" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_for_passanger_navigation"
+        app:itemIconTint="@color/icons"
+        app:itemTextColor="@color/primary_text"
+        app:menu="@menu/nav_passanger_menu_drawer">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

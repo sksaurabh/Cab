@@ -1,0 +1,2700 @@
+<resources>
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="icon">@color/white</item>
+            <item name="divider">@color/dividerColor</item>
+            <item name="background">@color/white</item>
+            <item name="android:windowBackground">@color/white</item>
+            <item name="colorControlActivated">@color/colorAccent</item>
+            <item name="colorControlNormal">@color/secondary_text</item>
+            <item name="android:dialogTheme">@style/AppCompatDialogStyle</item>
+            <item name="searchViewStyle">@style/i1_search_view</item>
+        </style>
+
+        <style name="i1_search_view" parent="Widget.AppCompat.SearchView">
+            <item name="android:textColor">@color/white</item>
+
+            <item name="searchHintIcon">@null</item>
+        </style>
+
+        <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="android:textAppearance">@color/colorAccent</item>
+        </style>
+
+        <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar">
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <!--<item name="colorPrimaryLight">@color/css_primary_light</item>-->
+            <item name="colorAccent">@color/colorAccent</item>
+            <!--<item name="textColorPrimary">@color/css_primary_text</item>
+            <item name="textColorSecondary">@color/css_secondary_text</item>-->
+            <item name="icon">@color/white</item>
+            <item name="divider">@color/dividerColor</item>
+            <item name="background">@color/white</item>
+            <item name="android:windowBackground">@color/white</item>
+
+        </style>
+
+        <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+        <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="CustomAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+            <item name="colorAccent">@color/color_alert</item>
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+        <style name="AlertDialogCSS" parent="Theme.AppCompat.Light.Dialog.Alert">
+            <item name="android:textColor">@color/primary_text</item>
+            <item name="colorAccent">@color/colorAccent</item>
+        </style>
+
+        <style name="InfoAlert" parent="Theme.AppCompat.Light.Dialog.Alert">
+            <item name="android:textColor">@color/primary_text</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="android:windowNoTitle">true</item>
+        </style>
+
+
+
+        <!-- ................................. Toolbar Style starts .............................................-->
+
+        <style name="BaseToolbar" parent="Widget.AppCompat.Toolbar">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:background">@color/white</item>
+            <item name="android:minHeight">?attr/actionBarSize</item>
+            <item name="android:elevation">4dp</item>
+            <!--<item name="android:textColor">@color/white</item>-->
+
+
+        </style>
+
+
+
+
+        <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+            <item name="android:textColorPrimary">@color/black</item>
+            <!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+            <item name="actionMenuTextColor">@color/black</item>
+            <!-- Tints the input fields like checkboxes and text fields -->
+            <item name="colorAccent">@color/colorAccent</item>
+
+        </style>
+
+
+        <!-- ....................................Toolbar Style ends................................................... -->
+
+
+        <!-- .................................... Divider Style  Start................................................... -->
+        <style name="Divider">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">@dimen/divider_height</item>
+            <item name="android:background">@color/dividerColor</item>
+        </style>
+
+
+        <!-- ................................. Divider Style  Start ..................................................-->
+
+
+        <!-- ................................. TEXT VIEW STYLE START ..................................................-->
+
+        <style name="ALParentText" parent="@android:style/Widget.TextView">
+            <item name="android:textColor">@color/primary_text</item>
+
+            <item name="android:fontFamily">sans-serif</item>
+
+        </style>
+
+
+
+
+
+        <style name="ALParentGrayText" parent="ALParentText">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="ALParentWhiteText" parent="ALParentText">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        // Black color style ..
+
+        <style name="primaryTextRegular" parent="ALParentText">
+            <item name="android:textSize">@dimen/primary_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="primaryTextBold" parent="ALParentText">
+            <item name="android:textSize">@dimen/primary_text_size</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="primaryTextItalic" parent="ALParentText">
+            <item name="android:textSize">@dimen/primary_text_size</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+
+        <style name="secondaryTextRegular" parent="ALParentText">
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="secondaryTextBold" parent="ALParentText">
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="secondaryTextItalic" parent="ALParentText">
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="ternaryTextRegular" parent="ALParentText">
+            <item name="android:textSize">@dimen/ternary_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="ternaryTextBold" parent="ALParentText">
+            <item name="android:textSize">@dimen/ternary_text_size</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="ternaryTextItalic" parent="ALParentText">
+            <item name="android:textSize">@dimen/ternary_text_size</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        //Gray color text
+
+        <style name="primaryTextRegularGary" parent="ALParentGrayText">
+            <item name="android:textSize">@dimen/primary_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="primaryTextBoldGary" parent="ALParentGrayText">
+            <item name="android:textSize">@dimen/primary_text_size</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="primaryTextItalicGary" parent="ALParentGrayText">
+            <item name="android:textSize">@dimen/primary_text_size</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+
+        <style name="secondaryTextRegularGary" parent="ALParentGrayText">
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="secondaryTextBoldGary" parent="ALParentGrayText">
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="secondaryTextItalicGary" parent="ALParentGrayText">
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="ternaryTextRegularGary" parent="ALParentGrayText">
+            <item name="android:textSize">@dimen/ternary_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="ternaryTextBoldGary" parent="ALParentGrayText">
+            <item name="android:textSize">@dimen/ternary_text_size</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="ternaryTextItalicGary" parent="ALParentGrayText">
+            <item name="android:textSize">@dimen/ternary_text_size</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+
+
+
+
+        //White text
+
+        <style name="primaryTextRegularWhite" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/primary_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="primaryTextBoldWhite" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/primary_text_size</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="primaryTextItalicWhite" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/primary_text_size</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+
+        <style name="secondaryTextRegularWhite" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="secondaryTextBoldWhite" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="secondaryTextItalicWhite" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="ternaryTextRegularWhite" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/ternary_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="ternaryTextBoldWhite" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/ternary_text_size</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="ternaryTextItalicWhite" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/ternary_text_size</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+
+        <style name="ToolBarTitleText" parent="ALParentText">
+            <item name="android:textSize">@dimen/title_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <!-- ....................................TEXT VIEW STYLE END................................................... -->
+
+
+        <!-- ....................................Button style start................................................... -->
+
+        <style name="ALParentButton" parent="@android:style/Widget.Button">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">bold</item>
+
+        </style>
+
+
+
+        <style name="primaryButton" parent="ALParentWhiteText">
+
+            <item name="android:textSize">@dimen/primary_button_text_size</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">50dp</item>
+            <item name="android:textAllCaps">true</item>
+            <item name="android:gravity">center</item>
+
+            <item name="android:background">@color/colorAccent</item>
+            <item name="android:textColor">@color/white</item>
+
+        </style>
+
+        <style name="primaryButtonforbooknow" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/primary_button_text_size</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">50dp</item>
+            <item name="android:textAllCaps">true</item>
+            <item name="android:gravity">center</item>
+            <item name="android:background">@drawable/button_booknow_background</item>
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="primaryRoundedButton" parent="primaryButton">
+            <item name="android:background">@drawable/rounded_button_shape</item>
+        </style>
+
+        <style name="secondaryButton" parent="ALParentButton">
+            <item name="android:textSize">@dimen/primary_button_text_size</item>
+            <item name="android:layout_height">50dp</item>
+            <item name="android:textAllCaps">true</item>
+            <item name="android:background">@color/white</item>
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+
+        <!-- ....................................Button style end................................................... -->
+
+
+        <!-- ....................................Edit text style start................................................... -->
+
+        <style name="ALParentEditText" parent="@android:style/Widget.TextView">
+            <item name="android:fontFamily">sans-serif</item>
+
+        </style>
+
+        <style name="primaryEditText" parent="ALParentEditText">
+            <item name="android:textColor">@color/editTextColor</item>
+            <item name="android:textColorHint">@color/white</item>
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+        </style>
+
+
+        <style name="primaryButtonforbooknowTextView" parent="ALParentWhiteText">
+            <item name="android:textSize">@dimen/primary_button_text_size</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">50dp</item>
+            <item name="android:textAllCaps">true</item>
+            <item name="android:gravity">center</item>
+            <item name="android:background">@drawable/new_button_booknow_background</item>
+            <item name="android:textColor">@color/white</item>
+        </style>
+        <!-- ....................................Edit text style end................................................... -->
+
+        <!--<style name="i1_R">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="i1_R_Bold">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="i1_I">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="i1_B">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="i1_B_Italic">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">bold|italic</item>
+        </style>
+
+        <style name="i1_L">
+            <item name="android:fontFamily">sans-serif-light</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="i1_L_Italic">
+            <item name="android:fontFamily">sans-serif-light</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="i1_M">
+            <item name="android:fontFamily">sans-serif-medium</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="i1_M_Italic">
+            <item name="android:fontFamily">sans-serif-medium</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="i1_T">
+            <item name="android:fontFamily">sans-serif-thin</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="i1_T_Italic">
+            <item name="android:fontFamily">sans-serif-thin</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="i1_C_Regular">
+            <item name="android:fontFamily">sans-serif-condensed</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="i1_C_Italic">
+            <item name="android:fontFamily">sans-serif-condensed</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="i1_C_Bold">
+            <item name="android:fontFamily">sans-serif-condensed</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="i1_C_Bold_Italic">
+            <item name="android:fontFamily">sans-serif-condensed</item>
+            <item name="android:textStyle">bold|italic</item>
+        </style>
+
+        <style name="i1_Black">
+            <item name="android:fontFamily">sans-serif-black</item>
+            <item name="android:textStyle">italic</item>
+        </style>-->
+        <!--Roboto styles ends-->
+
+        <!--Roboto text sizes starts here-->
+        <!--Roboto text size zero starts-->
+        <style name="i1_0R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+
+        <style name="i1_0Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_zero</item>
+        </style>
+        <!--Roboto text size zero ends-->
+
+        <!-- &lt;!&ndash;Roboto text size one starts&ndash;&gt;
+         <style name="i1_1R" parent="i1_R">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1R_Bold" parent="i1_R_Bold">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1I" parent="i1_I">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1B" parent="i1_B">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1B_Italic" parent="i1_B_Italic">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1L" parent="i1_L">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1L_Italic" parent="i1_L_Italic">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1M" parent="i1_M">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1M_Italic" parent="i1_M_Italic">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1T" parent="i1_T">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1T_Italic" parent="i1_T_Italic">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1C_Regular" parent="i1_C_Regular">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1C_Italic" parent="i1_C_Italic">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1C_Bold" parent="i1_C_Bold">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1C_Bold_Italic" parent="i1_C_Bold_Italic">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>
+
+         <style name="i1_1Black" parent="i1_Black">
+             <item name="android:textSize">@dimen/i1_one</item>
+         </style>-->
+        <!--Roboto text size one ends-->
+
+        <!--Roboto text size two starts-->
+        <style name="i1_2R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+
+        <style name="i1_2Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_two</item>
+        </style>
+        <!--Roboto text size two ends-->
+
+        <!--Roboto text size three starts-->
+        <style name="i1_3R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <!-- ....................................Button style end................................................... -->
+
+
+        <style name="i1_R">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="i1_R_Bold">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="i1_I">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="i1_B">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="i1_B_Italic">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">bold|italic</item>
+        </style>
+
+        <style name="i1_L">
+            <item name="android:fontFamily">sans-serif-light</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="i1_L_Italic">
+            <item name="android:fontFamily">sans-serif-light</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="i1_M">
+            <item name="android:fontFamily">sans-serif-medium</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="i1_M_Italic">
+            <item name="android:fontFamily">sans-serif-medium</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="i1_T">
+            <item name="android:fontFamily">sans-serif-thin</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="i1_T_Italic">
+            <item name="android:fontFamily">sans-serif-thin</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="i1_C_Regular">
+            <item name="android:fontFamily">sans-serif-condensed</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="i1_C_Italic">
+            <item name="android:fontFamily">sans-serif-condensed</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+
+        <style name="i1_C_Bold">
+            <item name="android:fontFamily">sans-serif-condensed</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="i1_C_Bold_Italic">
+            <item name="android:fontFamily">sans-serif-condensed</item>
+            <item name="android:textStyle">bold|italic</item>
+        </style>
+
+        <style name="i1_Black">
+            <item name="android:fontFamily">sans-serif-black</item>
+            <item name="android:textStyle">italic</item>
+        </style>
+        <!--Roboto styles ends-->
+
+        <!--Roboto text sizes starts here-->
+        <!--Roboto text size zero starts-->
+        <!--Roboto text size zero ends-->
+
+        <!--Roboto text size one starts-->
+        <style name="i1_1R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+
+        <style name="i1_1Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_one</item>
+        </style>
+        <!--Roboto text size one ends-->
+
+        <!--Roboto text size two starts-->
+        <!--  <style name="i1_2R" parent="i1_R">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2R_Bold" parent="i1_R_Bold">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2I" parent="i1_I">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2B" parent="i1_B">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2B_Italic" parent="i1_B_Italic">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2L" parent="i1_L">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2L_Italic" parent="i1_L_Italic">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2M" parent="i1_M">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2M_Italic" parent="i1_M_Italic">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2T" parent="i1_T">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2T_Italic" parent="i1_T_Italic">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2C_Regular" parent="i1_C_Regular">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2C_Italic" parent="i1_C_Italic">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2C_Bold" parent="i1_C_Bold">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2C_Bold_Italic" parent="i1_C_Bold_Italic">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>
+
+          <style name="i1_2Black" parent="i1_Black">
+              <item name="android:textSize">@dimen/i1_two</item>
+          </style>-->
+        <!--Roboto text size two ends-->
+
+        <!--Roboto text size three starts-->
+
+
+
+
+
+
+        <style name="i1_3B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+
+        <style name="i1_3Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_three</item>
+        </style>
+        <!--Roboto text size three ends-->
+
+        <!--Roboto text size four starts-->
+        <style name="i1_4R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+
+        <style name="i1_4Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_four</item>
+        </style>
+        <!--Roboto text size four ends-->
+
+        <!--Roboto text size five starts-->
+        <style name="i1_5R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+
+        <style name="i1_5Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_five</item>
+        </style>
+        <!--Roboto text size five ends-->
+
+        <!--Roboto text size six starts-->
+        <style name="i1_6R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+
+        <style name="i1_6Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_six</item>
+        </style>
+        <!--Roboto text size six ends-->
+
+        <!--Roboto text size seven starts-->
+        <style name="i1_7R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+
+        <style name="i1_7Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_seven</item>
+        </style>
+        <!--Roboto text size seven ends-->
+
+        <!--Roboto text size eight starts-->
+        <style name="i1_8R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+
+        <style name="i1_8Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_eight</item>
+        </style>
+        <!--Roboto text size eight ends-->
+
+        <!--Roboto text size nine starts-->
+        <style name="i1_9R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+
+        <style name="i1_9Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_nine</item>
+        </style>
+        <!--Roboto text size nine ends-->
+
+        <!--Roboto text size ten starts-->
+        <style name="i1_10R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+
+        <style name="i1_10Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_ten</item>
+        </style>
+        <!--Roboto text size ten ends-->
+
+        <!--Roboto text size eleven starts-->
+        <style name="i1_11R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+
+        <style name="i1_11Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_eleven</item>
+        </style>
+        <!--Roboto text size eleven ends-->
+
+        <!--Roboto text size twelve starts-->
+        <style name="i1_12R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+
+        <style name="i1_12Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_twelve</item>
+        </style>
+        <!--Roboto text size twelve ends-->
+
+        <!--Roboto text size thirteen starts-->
+        <style name="i1_13R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+
+        <style name="i1_13Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_thirteen</item>
+        </style>
+        <!--Roboto text size thirteen ends-->
+
+        <!--Roboto text size fourteen starts-->
+        <style name="i1_14R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+
+        <style name="i1_14Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_fourteen</item>
+        </style>
+        <!--Roboto text size fourteen ends-->
+
+        <!--Roboto text size fifteen starts-->
+        <style name="i1_15R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+
+        <style name="i1_15Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_fifteen</item>
+        </style>
+        <!--Roboto text size fifteen ends-->
+
+        <!--Roboto text size sixteen starts-->
+        <style name="i1_16R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+
+        <style name="i1_16Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_sixteen</item>
+        </style>
+        <!--Roboto text size sixteen ends-->
+
+        <!--Roboto text size seventeen starts-->
+        <style name="i1_17R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+
+        <style name="i1_17Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_seventeen</item>
+        </style>
+        <!--Roboto text size seventeen ends-->
+
+        <!--Roboto text size eighteen starts-->
+        <style name="i1_18R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+
+        <style name="i1_18Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_eighteen</item>
+        </style>
+        <!--Roboto text size eighteen ends-->
+
+        <!--Roboto text size nineteen starts-->
+        <style name="i1_19R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+
+        <style name="i1_19Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_nineteen</item>
+        </style>
+        <!--Roboto text size nineteen ends-->
+
+        <!--Roboto text size twenty starts-->
+        <style name="i1_20R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+
+        <style name="i1_20Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_twenty</item>
+        </style>
+        <!--Roboto text size twenty ends-->
+
+        <!--Roboto text size twenty_one starts-->
+        <style name="i1_21R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+
+        <style name="i1_21Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_twenty_one</item>
+        </style>
+        <!--Roboto text size twenty_one ends-->
+
+        <!--Roboto text size twenty_two starts-->
+        <style name="i1_22R" parent="i1_R">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22R_Bold" parent="i1_R_Bold">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22I" parent="i1_I">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22B" parent="i1_B">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22B_Italic" parent="i1_B_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22L" parent="i1_L">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22L_Italic" parent="i1_L_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22M" parent="i1_M">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22M_Italic" parent="i1_M_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22T" parent="i1_T">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22T_Italic" parent="i1_T_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22C_Regular" parent="i1_C_Regular">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22C_Italic" parent="i1_C_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22C_Bold" parent="i1_C_Bold">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22C_Bold_Italic" parent="i1_C_Bold_Italic">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+
+        <style name="i1_22Black" parent="i1_Black">
+            <item name="android:textSize">@dimen/i1_twenty_two</item>
+        </style>
+        <!--Roboto text size twenty_two ends-->
+        <!--Roboto text sizes ends here-->
+
+        <!--Button size five for white and accent color starts-->
+        <style name="i1_5R_W" parent="i1_5R">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="i1_5M_W" parent="i1_5M">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="i1_5C_Regular_W" parent="i1_5C_Regular">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="i1_5R_A" parent="i1_5R">
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+
+        <style name="i1_5M_A" parent="i1_5M">
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+
+        <style name="i1_5C_Regular_A" parent="i1_5C_Regular">
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+        <!--Button size five for white and colorcolorAccent color ends-->
+
+        <!--Button size six for white and colorAccent color starts-->
+        <style name="i1_6R_W" parent="i1_6R">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="i1_6M_W" parent="i1_6M">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="i1_6C_Regular_W" parent="i1_6C_Regular">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="i1_6R_A" parent="i1_6R">
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+
+        <style name="i1_6M_A" parent="i1_6M">
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+
+        <style name="i1_6C_Regular_A" parent="i1_6C_Regular">
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+        <!--Button size six for white and accent color ends-->
+
+        <!--Button size seven for white and accent color starts-->
+        <style name="i1_7R_W" parent="i1_7R">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="i1_7M_W" parent="i1_7M">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="i1_7C_Regular_W" parent="i1_7C_Regular">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="i1_7R_A" parent="i1_7R">
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+
+        <style name="i1_7M_A" parent="i1_7M">
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+
+        <style name="i1_7C_Regular_A" parent="i1_7C_Regular">
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+        <!--Button size seven for white and accent color ends-->
+
+        <!--Caption size three for secondary text color starts-->
+        <style name="i1_3L_ST" parent="i1_3L">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="i1_3R_ST" parent="i1_3R">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+        <!--Caption size three for secondary text color ends-->
+
+        <!--Caption size four for secondary text color starts-->
+        <style name="i1_4L_ST" parent="i1_4L">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="i1_4R_ST" parent="i1_4R">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+        <!--Caption size four for secondary text color ends-->
+
+        <!--Caption size five for secondary text color starts-->
+        <style name="i1_5L_ST" parent="i1_5L">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="i1_5R_ST" parent="i1_5R">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+        <!--Caption size five for secondary text color ends-->
+
+        <!--Body size five for Primary text color starts-->
+        <style name="i1_5R_PT" parent="i1_5R">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_5M_PT" parent="i1_5M">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_5C_Regular_PT" parent="i1_5C_Regular">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+        <!--Body size five for Primary text color ends-->
+
+        <!--Body size six for Primary text color starts-->
+        <style name="i1_6R_PT" parent="i1_6R">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_6M_PT" parent="i1_6M">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_6C_Regular_PT" parent="i1_6C_Regular">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+        <!--Body size six for Primary text color ends-->
+
+        <!--Body size seven for Primary text color starts-->
+        <style name="i1_7R_PT" parent="i1_7R">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_7M_PT" parent="i1_7M">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_7C_Regular_PT" parent="i1_7C_Regular">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+        <!--Body size seven for Primary text color ends-->
+
+        <!--Sub-heading size eight for Secondary text color starts-->
+        <style name="i1_8R_ST" parent="i1_8R">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="i1_8M_ST" parent="i1_8M">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="i1_8C_Regular_ST" parent="i1_8C_Regular">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+        <!--Sub-heading size eight for Secondary text color ends-->
+
+        <!--Sub-heading size nine for Secondary text color starts-->
+        <style name="i1_9R_ST" parent="i1_9R">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="i1_9M_ST" parent="i1_9M">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="i1_9C_Regular_ST" parent="i1_9C_Regular">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+        <!--Sub-heading size nine for Secondary text color ends-->
+
+        <!--Sub-heading size ten for Secondary text color starts-->
+        <style name="i1_10R_ST" parent="i1_10R">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="i1_10M_ST" parent="i1_10M">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="i1_10B_ST" parent="i1_10B">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+
+        <style name="i1_10C_Regular_ST" parent="i1_10C_Regular">
+            <item name="android:textColor">@color/secondary_text</item>
+        </style>
+        <!--Sub-heading size ten for Secondary text color ends-->
+
+        <!--Title size size ten for Primary text color starts-->
+        <style name="i1_10R_PT" parent="i1_10R">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_10M_PT" parent="i1_10M">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_10C_Regular_PT" parent="i1_10C_Regular">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+        <!--Title size size ten for Primary text color ends-->
+
+        <!--Title size eleven for Primary text color starts-->
+        <style name="i1_11M_PT" parent="i1_11M">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_11B_PT" parent="i1_11B">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_11C_Bold_PT" parent="i1_11C_Bold">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+        <!--Title size eleven for Primary text color ends-->
+
+        <!--Title size twelve for Primary text color starts-->
+        <style name="i1_12M_PT" parent="i1_12M">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_12B_PT" parent="i1_12B">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_12C_Bold_PT" parent="i1_12C_Bold">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+        <!--Title size twelve for Primary text color ends-->
+
+        <!--Title size thirteen for Primary text color starts-->
+        <style name="i1_13M_PT" parent="i1_13M">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_13B_PT" parent="i1_13B">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_13C_Bold_PT" parent="i1_13C_Bold">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+        <!--Title size thirteen for Primary text color ends-->
+
+        <!--Headline size fifteen for Primary text color starts-->
+        <style name="i1_15R_PT" parent="i1_15R">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_15M_PT" parent="i1_15M">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_15C_Regular_PT" parent="i1_15C_Regular">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+        <!--Headline size fifteen for Primary text color ends-->
+
+        <!--Headline size sixteen for Primary text color starts-->
+        <style name="i1_16R_PT" parent="i1_16R">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_16M_PT" parent="i1_16M">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_16C_Regular_PT" parent="i1_16C_Regular">
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+        <!--Headline size sixteen for Primary text color ends-->
+
+        <!--Dialog styles start-->
+        <style name="i1_dialog_standard">
+            <item name="android:padding">@dimen/i1_dialog_padding</item>
+        </style>
+
+        <style name="i1_dialog_title" parent="i1_13M">
+            <item name="android:textColor">@color/primary_text</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginBottom">@dimen/i1_15dp_margin</item>
+        </style>
+
+        <style name="i1_dialog_body" parent="android:Widget.TextView">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textAppearance">@style/i1_9R</item>
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+
+        <style name="i1_dialog_button" parent="@style/Widget.AppCompat.Button.Borderless">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:padding">@dimen/i1_dialog_button_padding</item>
+            <item name="android:layout_marginRight">@dimen/i1_dialog_button_margin</item>
+            <item name="android:layout_marginBottom">@dimen/i1_dialog_button_margin</item>
+            <item name="android:layout_marginTop">@dimen/i1_15dp_margin</item>
+            <item name="android:textAllCaps">true</item>
+            <item name="android:textAppearance">@style/i1_dialog_button_text</item>
+            <item name="android:textColor">@color/color_alert</item>
+        </style>
+
+        <style name="i1_dialog_button_text" parent="i1_7M">
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+
+        <!--Dialog styles end-->
+
+        <!--Button style starts-->
+        <style name="i1_button" parent="i1_7M_W">
+            <item name="android:background">@color/colorAccent</item>
+            <item name="android:textAllCaps">false</item>
+        </style>
+
+        <style name="i1_button_standard" parent="i1_button">
+            <item name="android:gravity">center_vertical|center_horizontal</item>
+            <item name="android:shadowColor">@color/black</item>
+
+            <item name="android:shadowDx">0</item>
+            <item name="android:shadowDy">-1</item>
+            <item name="android:shadowRadius">0.2</item>
+            <item name="android:background">@color/accent</item>
+
+
+
+
+            <item name="android:focusable">true</item>
+            <item name="android:clickable">true</item>
+        </style>
+
+
+
+        <!--Card view style starts-->
+        <style name="i1_card_view" parent="CardView">
+            <item name="contentPadding">@dimen/i1_10dp_padding</item>
+            <item name="android:layout_marginBottom">@dimen/i1_card_view_margin_8dp</item>
+            <item name="android:layout_marginLeft">@dimen/i1_card_view_margin_8dp</item>
+            <item name="android:layout_marginRight">@dimen/i1_card_view_margin_8dp</item>
+            <item name="android:layout_margin">@dimen/i1_card_view_margin_8dp</item>
+            <item name="android:shadowColor">@color/black</item>
+            <item name="android:shadowDx">2</item>
+            <item name="android:shadowDy">2</item>
+            <item name="android:shadowRadius">1.2</item>
+            <item name="cardBackgroundColor">@color/white</item>
+            <item name="cardElevation">@dimen/i1_3dp_elevation</item>
+            <item name="cardCornerRadius">4dp</item>
+        </style>
+
+
+
+
+        <!--Card view style ends-->
+
+        <!--Edit text style starts-->
+        <style name="i1_edit_text" parent="Widget.AppCompat.EditText">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textAppearance">@style/i1_7R_PT</item>
+            <item name="colorControlActivated">@color/colorAccent</item>
+            <item name="colorControlHighlight">@color/colorAccent</item>
+            <item name="android:drawablePadding">@dimen/i1_10dp_padding</item>
+            <item name="android:padding">@dimen/i1_15dp_padding</item>
+        </style>
+        <!--Edit text style ends-->
+
+        <!--Tab Layout style starts-->
+        <style name="i1_tab_layout" parent="Widget.Design.TabLayout">
+            <item name="tabIndicatorColor">@color/colorAccent</item>
+            <item name="tabIndicatorHeight">@dimen/i1_tab_indicator_height</item>
+            <item name="android:background">@color/colorPrimary</item>
+            <item name="tabTextAppearance">@style/i1_tab_text</item>
+            <item name="android:focusable">true</item>
+            <item name="android:clickable">true</item>
+            <item name="tabSelectedTextColor">@color/white</item>
+        </style>
+
+        <style name="i1_tab_text" parent="i1_6M">
+            <item name="android:textAllCaps">true</item>
+            <item name="android:textColor">@color/primary_text</item>
+        </style>
+        <!--Tab Layout style ends-->
+
+        <!--Underline style starts-->
+        <style name="i1_underline_1dp">
+            <item name="android:layout_height">1dp</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:background">@color/button_disabled</item>
+        </style>
+
+        <style name="i1_underline">
+            <item name="android:layout_height">1dp</item>
+            <item name="android:background">@color/underline</item>
+            <item name="android:layout_marginLeft">@dimen/i1_10dp_margin</item>
+            <item name="android:layout_marginRight">@dimen/i1_10dp_margin</item>
+        </style>
+        <!--Underline style ends-->
+
+        <!--TextView style starts-->
+        <style name="i1_text_view" parent="android:Widget.TextView">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textAppearance">@style/i1_7R</item>
+            <item name="android:layout_marginLeft">@dimen/i1_10dp_margin</item>
+            <item name="android:drawablePadding">@dimen/i1_10dp_margin</item>
+
+        </style>
+        <!--TextView style ends-->
+
+        <!--Card Title style starts-->
+        <style name="i1_card_title" parent="android:Widget.TextView">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textAppearance">@style/i1_9M</item>
+            <item name="android:textColor">@color/secondary_text</item>
+            <item name="android:layout_marginLeft">@dimen/i1_10dp_margin</item>
+            <item name="android:layout_marginTop">@dimen/i1_5dp_margin</item>
+            <item name="android:textAllCaps">true</item>
+        </style>
+        <!--Card Title style ends-->
+
+        <!--Text Input Layout Style starts-->
+        <style name="i1_text_input_layout">
+            <!--<item name="android:layout_margin">@dimen/i1_10dp_margin</item>-->
+            <item name="android:layout_marginLeft">@dimen/i1_10dp_margin</item>
+            <item name="android:layout_marginRight">@dimen/i1_10dp_margin</item>
+            <item name="android:layout_marginTop">@dimen/i1_10dp_margin</item>
+        </style>
+        <!--Text Input Layout Style ends-->
+
+        <!--Action Bar Title Style-->
+        <style name="i1_action_title" parent="i1_12M">
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+
+
+
+
+        <style name="primaryText" parent="@android:style/Widget.TextView">
+            <item name="android:textColor">@color/primary_text</item>
+            <item name="android:textSize">@dimen/title_text_size</item>
+        </style>
+
+        <style name="secondaryText" parent="@android:style/Widget.TextView">
+            <item name="android:textColor">@color/secondary_text</item>
+            <item name="android:textSize">@dimen/secondary_text_size</item>
+
+        </style>
+
+
+
+        <style name="SelectableItemTheme">
+            <item name="colorControlHighlight">@color/white</item>
+        </style>
+
+        <style name="SelectableItemBackground">
+            <item name="android:theme">@style/SelectableItemTheme</item>
+            <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        </style>
+
+        <style name="colorControlHighlight_red">
+            <item name="colorControlHighlight">@color/colorPrimary</item>
+        </style>
+
+
+
+
+
+        <style name="i1_tab_list_subtitle" parent="android:Widget.TextView">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textAppearance">@style/i1_5R_ST</item>
+        </style>
+
+        <style name="i1_rowItem_SelectableItemTheme">
+            <item name="colorControlHighlight">@color/default_ripple_color</item>
+        </style>
+
+        <style name="i1_rowItem_SelectableItemBackground">
+            <item name="android:theme">@style/i1_rowItem_SelectableItemTheme</item>
+            <item name="android:background">?attr/selectableItemBackground</item>
+        </style>
+
+
+    <style name="i1_text_view_nav_header" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/i1_5dp_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    </resources>
+
+
+
+

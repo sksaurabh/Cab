@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorNewAccent">#471866</color>
+    <color name="colorNewAccentDisable">#6b4087</color>
+    <color name="primary">@color/colorPrimary</color>
+    <color name="primary_dark">@color/colorPrimaryDark</color>
+    <color name="primary_light">#d1c4e9</color>
+    <color name="accent">@color/colorAccent</color>
+    <color name="accent_new">@color/colorNewAccent</color>
+    <color name="accent_disable_new">@color/colorNewAccentDisable</color>
+    //.............new color.....................
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#a9adb8</color>
+    <color name="dividerColor">#bdbdbd</color>
+    <color name="editTextColor">@color/black</color>
+    <color name="editTextHintColor">#bdbdbd</color>
+    <color name="red">#FF0000</color>
+    <color name="fab">#ff7676</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_alpha">#00000000</color>
+    <color name="button_disabled">#A9ADB8</color>
+    <color name="button_active">#41C4FE</color>
+    <color name="button_pressed">#2a1370</color>
+    <color name="ripple_light">#FFCDD2</color>
+    <color name="underline">#d3d3d3</color>
+    <color name="background">#efeff4</color>
+    <color name="button_rent">#31393c</color>
+    <color name="button_rent_on">#3dccc7</color>
+    <color name="icons">#888888</color>
+    <color name="yellow_color">#FFFF00</color>
+    <color name="map_pin_blue">#5880c0</color>
+    <color name="map_pin_green">#1cab76</color>
+    - <!-- new color
+  -->
+    <color name="default_ripple_color">#E2E2E2</color>
+    <color name="shadow_start">#80000000</color>
+    <color name="shadow_end">#00000000</color>
+    - <!--   book now color button
+  -->
+    <color name="button_focused">#ff8a00</color>
+    <color name="button_default">#1c76bb</color>
+    <color name="alert_red">#C50B0E</color>
+    <color name="color_alert">#03A093</color>
+    <color name="blue_color">#1c76bb</color>
+    <color name="color_otp">#1c76bb</color>
+    <color name="terms_and_conditions_color">#5880c0</color>
+    <color name="new_terms_and_conditions_color">#471866</color>
+    <color name="new_color_for_buttons">#471866</color>
+    <color name="color_for_cars">#B7388F</color>
+    <color name="circle_circle">#ffad1457</color>
+    <color name="disable_color">#D1C8C7</color>
+</resources>
